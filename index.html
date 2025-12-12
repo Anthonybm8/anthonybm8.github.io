@@ -1,1 +1,208 @@
-<h1>Hola, este es mi GitHub Pages 🔥</h1>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anthony Monta — Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0b63ff;--muted:#6b7280;--glass:rgba(255,255,255,0.55)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:linear-gradient(180deg,#f7f9ff 0%,var(--bg) 100%);color:#0b1220}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;gap:28px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:12px;overflow:hidden;flex:0 0 140px;box-shadow:0 8px 30px rgba(15,23,42,0.12)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .hero{flex:1}
+    h1{margin:0;font-size:28px}
+    .role{color:var(--muted);margin-top:6px}
+    .contact{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;text-decoration:none;border:none;background:var(--accent);color:white;font-weight:600}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,99,255,0.12)}
+    main{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px}
+
+    /* Left column */
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 24px rgba(15,23,42,0.06)}
+    .about p{color:#111827;margin:0 0 12px 0;line-height:1.5}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .skill{background:#eef2ff;color:#0b63ff;padding:6px 10px;border-radius:999px;font-size:13px}
+
+    /* Projects */
+    .projects{display:grid;gap:12px;margin-top:12px}
+    .proj{display:flex;flex-direction:column;border-radius:10px;padding:14px;border:1px solid #eef2f8;background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent)}
+    .proj h3{margin:0;font-size:16px}
+    .proj p{margin:8px 0 12px;color:var(--muted);font-size:14px}
+    .proj a{font-weight:600;color:var(--accent);text-decoration:none}
+
+    /* Right column */
+    aside .section{margin-bottom:16px}
+    .section h4{margin:0 0 10px 0}
+    .exp p{margin:0;color:var(--muted);font-size:14px}
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:980px){main{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <!-- Reemplaza 'profile.jpg' con el nombre real de tu foto en el repo -->
+        <img src="profile.jpg" alt="Anthony Monta">
+      </div>
+      <div class="hero">
+        <h1>Anthony Steeven Monta Chiliquinga</h1>
+        <div class="role">Estudiante • Desarrollo de Software</div>
+        <div class="contact">
+          <a class="btn" href="mailto:estivenmonta3212@gmail.com">✉ estivenmonta3212@gmail.com</a>
+          <a class="btn secondary" href="tel:+593983189799">📱 0983189799</a>
+          <a class="btn secondary" href="#download">⬇ Descargar CV</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card about">
+          <h2>Sobre mí</h2>
+          <p>Soy estudiante de desarrollo de software con experiencia en creación y mantenimiento de sistemas CRUD, consumo de APIs y manejo de bases de datos. Me destaco por aprender rápido, trabajar en equipo y entregar soluciones limpias y funcionales.</p>
+
+          <div style="margin-top:12px">
+            <h4>Habilidades</h4>
+            <div class="skills">
+              <div class="skill">Laravel</div>
+              <div class="skill">PHP</div>
+              <div class="skill">MySQL</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">HTML/CSS</div>
+              <div class="skill">Git</div>
+              <div class="skill">GitHub</div>
+              <div class="skill">APIs</div>
+              <div class="skill">Bootstrap</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px">
+            <h4>Experiencia</h4>
+            <p>Desarrollo de múltiples proyectos académicos y colaborativos en GitHub/GitLab, abarcando sistemas empresariales, aplicaciones web, APIs, y proyectos de SIG (Sistemas de Información Geográfica). Participación activa en equipos de desarrollo ágil.</p>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Proyectos Destacados</h2>
+          <div class="projects">
+            
+            <div class="proj">
+              <h3>Museo</h3>
+              <p>Sistema de gestión para museos - administración de colecciones, exposiciones y visitantes.</p>
+              <a href="https://github.com/Anthonybm8/Museo" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Ambiental</h3>
+              <p>Aplicación para monitoreo y gestión de datos ambientales y sostenibilidad.</p>
+              <a href="https://github.com/Anthonybm8/Ambiental" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Deportistas</h3>
+              <p>Sistema CRUD para gestión de atletas, registros deportivos y seguimiento de rendimiento.</p>
+              <a href="https://github.com/Anthonybm8/Deportistas" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>COMEXIGER</h3>
+              <p>Plataforma para comercio exterior y gestión de importaciones/exportaciones.</p>
+              <a href="https://github.com/Anthonybm8/COMEXIGER" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>comexiger_app</h3>
+              <p>Aplicación complementaria para el sistema COMEXIGER con funcionalidades extendidas.</p>
+              <a href="https://github.com/Anthonybm8/comexiger_app" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Evaluación 2AM</h3>
+              <p>Proyecto de evaluación académica con enfoque en análisis y métricas.</p>
+              <a href="https://github.com/Anthonybm8/evaluacion2AM" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Sistemas Operativos</h3>
+              <p>Proyectos y ejercicios relacionados con sistemas operativos y concurrencia.</p>
+              <a href="https://github.com/Anthonybm8/SistemasOperativos" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Portafolio Personal</h3>
+              <p>Sitio web personal y portafolio profesional alojado en GitHub Pages.</p>
+              <a href="https://github.com/Anthonybm8/anthonybm8.github.io" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Inventario App</h3>
+              <p>Aplicación de gestión de inventario con interfaz moderna y funcionalidades CRUD.</p>
+              <a href="https://github.com/Anthonybm8/inventario_app" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Sistema Empresa</h3>
+              <p>Sistema integral para gestión empresarial con múltiples módulos administrativos.</p>
+              <a href="https://github.com/Anthonybm8/SistemaEmpresa" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="proj">
+              <h3>Sistema General</h3>
+              <p>Proyecto genérico de sistema con arquitectura escalable y patrones de diseño.</p>
+              <a href="https://github.com/Anthonybm8/sistema" target="_blank">Ver en GitHub</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card section">
+          <h4>Información Personal</h4>
+          <p><strong>Email:</strong> estivenmonta3212@gmail.com</p>
+          <p><strong>Teléfono:</strong> 0983189799</p>
+          <p><strong>Cédula:</strong> 0504702291</p>
+          <p><strong>Ubicación:</strong> Ecuador</p>
+        </div>
+
+        <div class="card section">
+          <h4>Descargar CV</h4>
+          <p style="color:var(--muted)">Haz clic en el botón para descargar tu CV en PDF.</p>
+          <a id="download" class="btn" href="cv_anthony_monta.pdf" download>Descargar CV</a>
+        </div>
+
+        <div class="card section">
+          <h4>Perfiles Profesionales</h4>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Anthonybm8" target="_blank">Anthonybm8</a></p>
+          <p><strong>GitLab:</strong> <a href="https://gitlab.com/Anthonybm8" target="_blank">Anthonybm8</a></p>
+          <p style="color:var(--muted); margin-top:8px; font-size:14px;">Más de 15 repositorios públicos demostrando experiencia en desarrollo full-stack.</p>
+        </div>
+
+        <div class="card section">
+          <h4>Tecnologías Principales</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;">
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">PHP</span>
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">Laravel</span>
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">MySQL</span>
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">JavaScript</span>
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">Git</span>
+            <span style="background:#eef2ff; color:#0b63ff; padding:4px 8px; border-radius:6px; font-size:12px;">APIs REST</span>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      Portafolio de Anthony Monta • Desarrollo de Software • Actualizado 2024
+    </footer>
+  </div>
+</body>
+</html>
